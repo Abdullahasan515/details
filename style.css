@@ -18,6 +18,9 @@
 }
 
 @media (max-width: 480px) {
+      .wrapper {
+    margin-top: 400px;
+      }
     .profile-image {
         width: 100%; /* عرض الصورة في الهواتف الذكية */
     }
