@@ -395,6 +395,8 @@ $(document).ready(function () {
   
   var image = document.createElement("img");
   image.src = imgData;
+image.className = 'profile-image'; // إضافة كلاس للتحكم في الموضع
+document.querySelector('.container').appendChild(image);
   var Submit = {
   
     //  DATA
