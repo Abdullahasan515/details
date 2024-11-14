@@ -1,4 +1,27 @@
+.profile-image {
+    width: 50vw; /* عرض الصورة 50% من عرض النافذة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    max-width: 100%; /* تأكد من عدم تجاوز عرض الحاوية */
+    max-height: 80vh; /* أقصى ارتفاع 80% من ارتفاع النافذة */
+    display: block; /* يجعل الصورة كتلة */
+    margin: 20px auto; /* توسيط الصورة أفقياً */
+}
+.profile-image {
+    width: 80%; /* عرض الصورة في الشاشات الكبيرة */
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+}
 
+@media (max-width: 768px) {
+    .profile-image {
+        width: 90%; /* عرض الصورة في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 100%; /* عرض الصورة في الهواتف الذكية */
+    }
+}
 .mCustomScrollbar {
     -ms-touch-action: pinch-zoom;
     touch-action: pinch-zoom;
