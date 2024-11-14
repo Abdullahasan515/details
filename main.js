@@ -265,6 +265,7 @@ $(document).ready(function () {
     resize: function () {
       Stars.canvas.width = window.innerWidth;
       Stars.canvas.height = window.innerHeight;
+      Stars.prepare(); 
     }
   };
   var renderer, scene, camera, ww, wh, particles;
@@ -325,41 +326,42 @@ $(document).ready(function () {
       requestAnimationFrame(render);
   };
   
-  var init = function () {
-      renderer = new THREE.WebGLRenderer({
-          canvas: document.getElementById("yahia"),
-          antialias: true,
-          alpha: true
-      });
-      renderer.setSize(ww, wh);
-  
-      scene = new THREE.Scene();
-  
-      camera = new THREE.OrthographicCamera(ww / -2, ww / 2, wh / 2, wh / -2, 1, 1000);
-      camera.position.set(0, -20, 4);
-      camera.lookAt(centerVector);
-      scene.add(camera);
-      camera.zoom = 1;
-      camera.updateProjectionMatrix();
-  
-      imagedata = getImageData(image);
-      drawTheMap();
-  
-      window.addEventListener('mousemove', onMousemove, false);
-      window.addEventListener('mousedown', onMousedown, false);
-      window.addEventListener('mouseup', onMouseup, false);
-      window.addEventListener('resize', onResize, false);
-  };
-  var onResize = function () {
-      ww = window.innerWidth;
-      wh = window.innerHeight;
-      renderer.setSize(ww, wh);
-      camera.left = ww / -2;
-      camera.right = ww / 2;
-      camera.top = wh / 2;
-      camera.bottom = wh / -2;
-      camera.updateProjectionMatrix();
-  };
+        var init = function () {
+            renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById("yahia"),
+                antialias: true,
+                alpha: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+            scene = new THREE.Scene();
+
+            camera = new THREE.OrthographicCamera(window.innerWidth / -2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / -2, 1, 1000);
+            camera.position.set(0, -20, 4);
+            camera.lookAt(centerVector);
+            scene.add(camera);
+            camera.zoom = 1;
+            camera.updateProjectionMatrix();
+
+            imagedata = getImageData(image);
+            drawTheMap();
+
+            window.addEventListener('mousemove', onMousemove, false);
+            window.addEventListener('mousedown', onMousedown, false);
+            window.addEventListener('mouseup', onMouseup, false);
+            window.addEventListener('resize', onResize, false);
+        };
+
+        var onResize = function () {
+            var ww = window.innerWidth;
+            var wh = window.innerHeight;
+            renderer.setSize(ww, wh);
+            camera.left = ww / -2;
+            camera.right = ww / 2;
+            camera.top = wh / 2;
+            camera.bottom = wh / -2;
+            camera.updateProjectionMatrix();
+        };
   
   var onMouseup = function () {
       isMouseDown = false;
