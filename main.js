@@ -257,21 +257,7 @@ var Stars = {
         this.canvas.height = window.innerHeight;
         this.prepare(); // إعادة تحضير الدوائر
     }
-},
-  
-    //  MOUSE MOVE
-    mouseMove: function (event) {
-      Stars.mouse.x = event.x;
-      Stars.mouse.y = event.y;
-    },
-  
-    //  RESIZE
-    resize: function () {
-      Stars.canvas.width = window.innerWidth;
-      Stars.canvas.height = window.innerHeight;
-      Stars.prepare(); 
-    }
-  };
+};
   var renderer, scene, camera, ww, wh, particles;
   
   ww = window.innerWidth, wh = window.innerHeight;
