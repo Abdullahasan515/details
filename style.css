@@ -5,7 +5,15 @@
             width: 100vw;
             height: 100vh;
         }
-
+h1, h2, h3, p, span, mark {
+            font-size: 40px; /* حجم النص */
+            color: white; /* تغيير لون النص إلى الأبيض */
+            text-shadow: 
+                2px 2px 5px rgba(0, 0, 0, 0.5), /* ظل أساسي */
+                0 0 10px rgba(255, 255, 0, 0.8), /* تأثير مضيء */
+                0 0 20px rgba(255, 255, 0, 0.6); /* تأثير إضافي */
+            margin: 10px 0; /* إضافة هوامش بين العناصر */
+        }
 .profile-image {
     display: block; /* تأكد من أن الصورة تأخذ مساحة كاملة */
     margin: 100px 20px 0px 820px; /* توسيط الصورة */
