@@ -6,8 +6,7 @@
             height: 100vh;
         }
  .legendary-text {
-            font-size: 50px; /* حجم النص */
-            font-weight: bold; /* وزن النص */
+            font-weight: 900; /* وزن النص */
             color: #ffffff; /* لون النص الأبيض */
             text-shadow: 
                 0 0 5px #ffffff, 
@@ -16,9 +15,7 @@
                 0 0 30px #ff00ff, 
                 0 0 40px #8000ff, 
                 0 0 50px #8000ff;
-            text-align: center; /* توسيط النص */
             animation: glowing 2s infinite alternate; /* حركة مستمرة */
-            margin: 10px 0; /* إضافة هوامش بين العناصر */
         }
 
         @keyframes glowing {
