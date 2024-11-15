@@ -1,5 +1,5 @@
 #stars, #yahia {
-    position: absolute;
+    position: fixed; /* استخدام fixed لضمان تغطية الشاشة بالكامل */
     top: 0;
     left: 0;
     width: 100vw;  /* عرض كامل للنافذة */
@@ -7,47 +7,43 @@
     z-index: -1; /* تأكد من أن النجوم في الخلف */
 }
 .profile-image {
-        margin-left: 120px;
-            width: 100%; /* عرض الصورة 100% من الحاوية */
-            object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
-        }
-@media (max-width: 1068px) {
-    .profile-image {
-        margin-left: 120px;
-            object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
-        }
+    display: block; /* تأكد من أن الصورة تأخذ مساحة كاملة */
+    margin: 0 auto; /* توسيط الصورة */
+    width: 100%; /* عرض الصورة 100% من الحاوية */
+    max-width: 400px; /* تعيين عرض أقصى للصورة */
+    height: auto; /* الحفاظ على النسبة الصحيحة */
+    object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
 }
-        /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
-        @media (max-width: 600px) {
-            .container {
-                aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
-            }
-    .profile-image {
-        display: block;
-        margin-left: 40px;
-    }
-        }
+/* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
 @media (max-width: 768px) {
     .profile-image {
-        margin-left: 120px;
-            object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
-        }
-    .profile-image {
+        margin-left: auto; /* توسيط تلقائي */
+        margin-right: auto; /* توسيط تلقائي */
         width: 90%; /* عرض الصورة في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
+        padding: 10px; /* إضافة حشوة للحاوية */
+    }
+
+    .profile-image {
+        margin-left: 0; /* إزالة الهامش */
+        width: 100%; /* عرض الصورة 100% */
     }
 }
 
 @media (max-width: 480px) {
     #stars, #yahia {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;  /* عرض كامل للنافذة */
-    height: 100vh; /* ارتفاع كامل للنافذة */
-    z-index: -1; /* تأكد من أن النجوم في الخلف */
-}
+        height: 100vh; /* ارتفاع كامل للنافذة */
+    }
+    
     .profile-image {
-         margin-left: 40px;
+        margin-left: 0; /* إزالة الهامش */
+        margin-right: 0; /* إزالة الهامش */
+        width: 100%; /* عرض الصورة 100% */
     }
 }
 .mCustomScrollbar {
