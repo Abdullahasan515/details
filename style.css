@@ -5,6 +5,9 @@
         }
         /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
         @media (max-width: 600px) {
+            .body{
+                        background-color: black;
+            }
             .container {
                 aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
             }
@@ -16,6 +19,9 @@
 }
 
 @media (max-width: 480px) {
+             .body{
+                        background-color: black;
+            }
     .profile-image {
         display: flex;
         width: 100%; /* عرض الصورة في الهواتف الذكية */
