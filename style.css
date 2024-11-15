@@ -21,6 +21,8 @@
 
     .profile-image {
         width: 100%; /* عرض الصورة 100% */
+    margin: 100px 20px 0px 120px; /* توسيط الصورة */
+    max-width: 300px !important; /* تعيين عرض أقصى للصورة */
     }
 }
 
@@ -31,7 +33,7 @@
     
     .profile-image {
         width: 100%; /* عرض الصورة 100% */
-    margin: 100px 20px 0px 320px; /* توسيط الصورة */
+    margin: 100px 20px 0px 120px; /* توسيط الصورة */
     max-width: 300px !important; /* تعيين عرض أقصى للصورة */
     }
 }
