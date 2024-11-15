@@ -16,12 +16,12 @@
             color: #ffffff; /* لون النص الأبيض */
             text-shadow: 
                 0 0 5px #ffffff, 
-                0 0 10px #ffffff, 
-                0 0 20px #dcd9d9, 
-                0 0 30px #dcd9d9, 
-                0 0 40px #ffe2e2, 
-                0 0 50px #ffe2e2;
-            animation: glowing 2s infinite alternate; /* حركة مستمرة */
+                0 0 6px #ffffff, 
+                0 0 7 #dcd9d9, 
+                0 0 8 #dcd9d9, 
+                0 0 9 #ffe2e2, 
+                0 0 10 #ffe2e2;
+            animation: glowing 0.5s infinite alternate; /* حركة مستمرة */
         }
 
         @keyframes glowing {
@@ -36,12 +36,12 @@
             }
             100% {
                 text-shadow: 
-                    0 0 10px #ffffff, 
-                    0 0 20px #dcd9d9, 
-                    0 0 30px #dcd9d9, 
-                    0 0 40px #8c8989, 
-                    0 0 50px #534e4e, 
-                    0 0 60px #534e4e;
+                    0 0 0px #ffffff, 
+                    0 0 2px #dcd9d9, 
+                    0 0 3px #dcd9d9, 
+                    0 0 4px #8c8989, 
+                    0 0 5px #534e4e, 
+                    0 0 6px #534e4e;
             }
         }
 .profile-image {
