@@ -15,6 +15,7 @@
     .profile-image {
         display: block;
         width: 100%; /* عرض الصورة في الهواتف الذكية */
+        margin-left: 40px;
     }
         }
 @media (max-width: 768px) {
@@ -23,11 +24,9 @@
     }
 }
 
-@media (max-width: 480px) {
-             .body{
-                background-color: #000 !important;
-            }
+@media (max-width: 480px) 
     .profile-image {
+         margin-left: 40px;
         display: block;
         width: 100%; /* عرض الصورة في الهواتف الذكية */
     }
