@@ -8,39 +8,46 @@
 }
 .profile-image {
         margin-left: 120px;
-    
             width: 50%; /* عرض الصورة 100% من الحاوية */
             height: 50%; /* ارتفاع الصورة 100% من الحاوية */
             object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
         }
         /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
         @media (max-width: 600px) {
-             #stars {
-        height: 100vh; /* تأكد من ملء الشاشة */
-    }
-            
             .container {
                 aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
             }
-
     .profile-image {
         display: block;
+        height: 100%; /* تأكد من ملء الشاشة */
         width: 100%; /* عرض الصورة في الهواتف الذكية */
         margin-left: 40px;
     }
         }
 @media (max-width: 768px) {
     .profile-image {
+        margin-left: 120px;
+            width: 50%; /* عرض الصورة 100% من الحاوية */
+            height: 50%; /* ارتفاع الصورة 100% من الحاوية */
+            object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
+        }
+    .profile-image {
         width: 90%; /* عرض الصورة في الشاشات الصغيرة */
     }
 }
 
 @media (max-width: 480px) {
-     #stars {
-        height: 100vh; /* تأكد من ملء الشاشة */
-    }
+    #stars, #yahia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* عرض كامل للنافذة */
+    height: 100vh; /* ارتفاع كامل للنافذة */
+    z-index: -1; /* تأكد من أن النجوم في الخلف */
+}
     .profile-image {
          margin-left: 40px;
+        height: 100%; /* تأكد من ملء الشاشة */
         display: block;
         width: 100%; /* عرض الصورة في الهواتف الذكية */
     }
