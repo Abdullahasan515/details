@@ -41,6 +41,12 @@
     height: 100vh; /* ارتفاع كامل للنافذة */
     z-index: -1; /* تأكد من أن النجوم في الخلف */
 }
+
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+  /* direct pointer events to js */
+  }
   .mCustomScrollbar.mCS_no_scrollbar,
   .mCustomScrollbar.mCS_touch_action {
     -ms-touch-action: auto;
@@ -224,25 +230,7 @@
   .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight {
     right: 0;
   }
-  .mCSB_container_wrapper {
-    position: absolute;
-    height: auto;
-    width: auto;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .mCSB_container_wrapper > .mCSB_container {
-    padding-right: 30px;
-    padding-bottom: 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+ 
   .mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical {
     bottom: 20px;
   }
@@ -2430,7 +2418,6 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1; /* خلفية */
   }
   /* @media (max-width: 991px) {
     #yahia {
@@ -6774,10 +6761,3 @@
       transform: translateY(-70px) rotate(-5deg);
     }
   }
-  .notFound #identity,
-  .notFound #signature,
-  .notFound #stars,
-  .notFound #yahia {
-    filter: grayscale(1);
-  }
-  
