@@ -13,36 +13,6 @@ marquee {
     width: 100vw;
     height: 100vh;
 }
-
-.legendary-text {
-    font-weight: 900; /* وزن النص */
-    color: #ffffff; /* لون النص الأبيض */
-    text-shadow: 
-        0 0 5px #ffffff, 
-        0 0 1px #ffffff, 
-        0 0 2px #dcd9d9, 
-        0 0 4px #ffe2e2, 
-    
-    animation: glowing 0.5s infinite alternate; /* حركة مستمرة */
-}
-
-@keyframes glowing {
-    0% {
-        text-shadow: 
-            0 0 5px #ffffff, 
-            0 0 7px #ffffff, 
-            0 0 2px #dcd9d9, 
-            0 0 4px #8c8989, 
-    }
-    100% {
-        text-shadow: 
-            0 0 0px #ffffff, 
-            0 0 2px #dcd9d9, 
-            0 0 3px #dcd9d9, 
-            0 0 4px #8c8989, 
-    }
-}
-
 .profile-image {
     display: block; /* تأكد من أن الصورة تأخذ مساحة كاملة */
     margin: 100px 20px 0px 820px; /* توسيط الصورة */
