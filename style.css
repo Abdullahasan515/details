@@ -21,12 +21,7 @@ marquee {
         0 0 5px #ffffff, 
         0 0 1px #ffffff, 
         0 0 2px #dcd9d9, 
-        0 0 7px #dcd9d9, /* تم تصحيح هنا */
-        0 0 3px #dcd9d9, 
-        0 0 8px #dcd9d9, 
         0 0 4px #ffe2e2, 
-        0 0 9px #ffe2e2, 
-        0 0 5px #ffe2e2; /* تم تصحيح هنا */
     
     animation: glowing 0.5s infinite alternate; /* حركة مستمرة */
 }
@@ -37,14 +32,7 @@ marquee {
             0 0 5px #ffffff, 
             0 0 7px #ffffff, 
             0 0 2px #dcd9d9, 
-            0 0 2px #dcd9d9, 
-            0 0 3px #dcd9d9, 
-            0 0 3px #dcd9d9, 
             0 0 4px #8c8989, 
-            0 0 4px #8c8989, 
-            0 0 5px #534e4e, 
-            0 0 5px #534e4e, 
-            0 0 6px #534e4e; /* تم تصحيح هنا */
     }
     100% {
         text-shadow: 
@@ -52,8 +40,6 @@ marquee {
             0 0 2px #dcd9d9, 
             0 0 3px #dcd9d9, 
             0 0 4px #8c8989, 
-            0 0 5px #534e4e, 
-            0 0 6px #534e4e; /* تم تصحيح هنا */
     }
 }
 
