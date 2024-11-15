@@ -16,9 +16,7 @@
              #stars {
         height: 100vh; /* تأكد من ملء الشاشة */
     }
-            .body{
-                       display: block !important;
-            }
+            
             .container {
                 aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
             }
@@ -30,7 +28,7 @@
     }
         }
 @media (max-width: 768px) {
-    .profile-image {display: block !important;
+    .profile-image {
         width: 90%; /* عرض الصورة في الشاشات الصغيرة */
     }
 }
