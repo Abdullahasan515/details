@@ -644,7 +644,84 @@ image.onload = function() {
       theme: 'dark'
     });
   });
-  
+  function isWebGLAvailable() {
+    try {
+        var canvas = document.createElement('canvas');
+        return !!(window.WebGLRenderingContext && (
+            canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+        ));
+    } catch (e) {
+        return false;
+    }
+}
+
+if (!isWebGLAvailable()) {
+    alert("WebGL غير مدعوم في متصفحك.");
+}
+function resizeCanvas() {
+    const canvas = document.getElementById('stars');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // استدعاء الوظيفة عند التحميل
+        const canvas = document.getElementById('starCanvas');
+        const context = canvas.getContext('2d');
+
+        // ضبط أبعاد الـ canvas
+        function adjustCanvasSize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        // إنشاء النجوم
+        const starArray = [];
+        function generateStars(count) {
+            for (let i = 0; i < count; i++) {
+                starArray.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 2 + 1,
+                    speed: Math.random() * 0.5 + 0.5
+                });
+            }
+        }
+
+        // رسم النجوم
+        function renderStars() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            starArray.forEach(star => {
+                context.beginPath();
+                context.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                context.fillStyle = 'white';
+                context.fill();
+            });
+        }
+
+        // تحديث موقع النجوم
+        function updateStarPositions() {
+            starArray.forEach(star => {
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            });
+        }
+
+        // الحلقة الرئيسية
+        function animateStars() {
+            updateStarPositions();
+            renderStars();
+            requestAnimationFrame(animateStars);
+        }
+
+        // إعدادات البداية
+        window.addEventListener('resize', adjustCanvasSize);
+        adjustCanvasSize();
+        generateStars(100); // عدد النجوم
+        animateStars();
   function loadProject() {
     Router.route(undefined, function () {
   
