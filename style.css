@@ -1,4 +1,8 @@
-
+.profile-image {
+            width: 100%; /* عرض الصورة 100% من الحاوية */
+            height: 100%; /* ارتفاع الصورة 100% من الحاوية */
+            object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
+        }
         /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
         @media (max-width: 600px) {
             .container {
@@ -12,11 +16,7 @@
 }
 
 @media (max-width: 480px) {
-    .container {
-                aspect-ratio: 4/3; /* تغيير نسبة العرض إلى الارتفاع للأجهزة الصغيرة */
-            }
     .profile-image {
-        
         display: flex;
         width: 100%; /* عرض الصورة في الهواتف الذكية */
     }
@@ -1391,11 +1391,11 @@
     cursor: -webkit-grabbing;
   }
   .wrapper .container {
-    position: relative;
-    width: 90%;
-    max-width: 1000px;
-    height: 100%;
-    margin: 0 auto;
+   
+            width: 90%; /* عرض الحاوية */
+            max-width: 600px; /* أقصى عرض للحاوية */
+            overflow: hidden; /* منع الصورة من تجاوز الحاوية */
+            aspect-ratio: 16/9; /* الحفاظ على نسبة العرض إلى الارتفاع */
   }
   .mCustomScrollBox,
   .mCSB_container {
