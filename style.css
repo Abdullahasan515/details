@@ -13,6 +13,9 @@
         }
         /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
         @media (max-width: 600px) {
+             #stars {
+        height: 100vh; /* تأكد من ملء الشاشة */
+    }
             .body{
                        display: block !important;
             }
@@ -32,7 +35,10 @@
     }
 }
 
-@media (max-width: 480px) 
+@media (max-width: 480px) {
+     #stars {
+        height: 100vh; /* تأكد من ملء الشاشة */
+    }
     .profile-image {
          margin-left: 40px;
         display: block;
