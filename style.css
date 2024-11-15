@@ -1391,11 +1391,11 @@
     cursor: -webkit-grabbing;
   }
   .wrapper .container {
-   
-            width: 90%; /* عرض الحاوية */
-            max-width: 600px; /* أقصى عرض للحاوية */
-            overflow: hidden; /* منع الصورة من تجاوز الحاوية */
-            aspect-ratio: 16/9; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
   }
   .mCustomScrollBox,
   .mCSB_container {
