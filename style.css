@@ -6,14 +6,6 @@
     height: 100vh; /* ارتفاع كامل للنافذة */
     z-index: -1; /* تأكد من أن النجوم في الخلف */
 }
-#stars {
-    position: fixed; /* استخدم fixed بدلاً من absolute */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-}
 .profile-image {display: none;
             width: 100%; /* عرض الصورة 100% من الحاوية */
             height: 100%; /* ارتفاع الصورة 100% من الحاوية */
