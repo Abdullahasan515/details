@@ -217,7 +217,7 @@ var Stars = {
     // PREPARE
 prepare: function () {
     this.circleArray = [];
-    for (var i = 0; i < 600; i++) { // تقليل العدد من 1200 إلى 600
+    for (var i = 0; i < 300; i++) { // تقليل العدد من 1200 إلى 600
         var radius = this.radius;
         var x = Math.random() * (this.canvas.width - radius * 2) + radius;
         var y = Math.random() * (this.canvas.height - radius * 2) + radius;
