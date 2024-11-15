@@ -28,11 +28,11 @@
             0% {
                 text-shadow: 
                     0 0 5px #ffffff, 
-                    0 0 10px #ffffff, 
-                    0 0 20px #dcd9d9, 
-                    0 0 30px #dcd9d9, 
-                    0 0 40px #ffe2e2, 
-                    0 0 50px #ffe2e2;
+                    0 0 7px #ffffff, 
+                    0 0 10px #dcd9d9, 
+                    0 0 12px #dcd9d9, 
+                    0 0 13px #ffe2e2, 
+                    0 0 15px #ffe2e2;
             }
             100% {
                 text-shadow: 
