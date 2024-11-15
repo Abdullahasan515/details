@@ -1,4 +1,10 @@
-        #starCanvas {
+               marquee {
+            color: gold; /* لون النص المتحرك */
+            background-color: black; /* خلفية العنصر المتحرك */
+            font-size: 24px; /* حجم النص */
+            padding: 10px; /* إضافة هوامش */
+        }
+ #starCanvas {
             position: fixed;
             top: 0;
             left: 0;
@@ -49,12 +55,17 @@
 
 /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
 @media (max-width: 768px) {
+           marquee {
+                font-size: 18px; /* حجم النص على الشاشات الصغيرة */
+            }
     .profile-image {
         width: 90%; /* عرض الصورة في الشاشات الصغيرة */
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {   marquee {
+                font-size: 18px; /* حجم النص على الشاشات الصغيرة */
+            }
     .container {
         padding: 10px; /* إضافة حشوة للحاوية */
     }
@@ -66,7 +77,9 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) {   marquee {
+                font-size: 18px; /* حجم النص على الشاشات الصغيرة */
+            }
     #stars, #yahia {
         height: 100vh; /* ارتفاع كامل للنافذة */
     }
