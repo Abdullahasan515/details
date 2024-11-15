@@ -1,3 +1,11 @@
+        #starCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
 .profile-image {
     display: block; /* تأكد من أن الصورة تأخذ مساحة كاملة */
     margin: 100px 20px 0px 820px; /* توسيط الصورة */
