@@ -19,11 +19,15 @@ marquee {
     color: #ffffff; /* لون النص الأبيض */
     text-shadow: 
         0 0 5px #ffffff, 
-        0 0 6px #ffffff, 
+        0 0 10px #ffffff, 
+        0 0 20px #dcd9d9, 
         0 0 7px #dcd9d9, /* تم تصحيح هنا */
+        0 0 30px #dcd9d9, 
         0 0 8px #dcd9d9, 
+        0 0 40px #ffe2e2, 
         0 0 9px #ffe2e2, 
-        0 0 10px #ffe2e2; /* تم تصحيح هنا */
+        0 0 50px #ffe2e2; /* تم تصحيح هنا */
+    
     animation: glowing 0.5s infinite alternate; /* حركة مستمرة */
 }
 
@@ -32,10 +36,15 @@ marquee {
         text-shadow: 
             0 0 5px #ffffff, 
             0 0 7px #ffffff, 
-            0 0 10px #dcd9d9, 
-            0 0 12px #dcd9d9, 
-            0 0 13px #ffe2e2, 
-            0 0 15px #ffe2e2;
+            0 0 20px #dcd9d9, 
+            0 0 2px #dcd9d9, 
+            0 0 30px #dcd9d9, 
+            0 0 3px #dcd9d9, 
+            0 0 40px #8c8989, 
+            0 0 4px #8c8989, 
+            0 0 50px #534e4e, 
+            0 0 5px #534e4e, 
+            0 0 6px #534e4e; /* تم تصحيح هنا */
     }
     100% {
         text-shadow: 
@@ -44,7 +53,7 @@ marquee {
             0 0 3px #dcd9d9, 
             0 0 4px #8c8989, 
             0 0 5px #534e4e, 
-            0 0 6px #534e4e;
+            0 0 6px #534e4e; /* تم تصحيح هنا */
     }
 }
 
@@ -56,7 +65,7 @@ marquee {
     object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
     max-width: 500px; /* تعيين عرض أقصى للصورة */
 }
-/* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
+ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
 @media (max-width: 768px) {
            marquee {
                 font-size: 18px; /* حجم النص على الشاشات الصغيرة */
