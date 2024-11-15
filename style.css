@@ -15,10 +15,9 @@
 @media (max-width: 1068px) {
     .profile-image {
         margin-left: 120px;
-            width: 100%; /* عرض الصورة 100% من الحاوية */
-            height: 100%; /* ارتفاع الصورة 100% من الحاوية */
             object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
-        }}
+        }
+}
         /* ميديا كويري لتعديل الأنماط على الشاشات الصغيرة */
         @media (max-width: 600px) {
             .container {
@@ -26,16 +25,12 @@
             }
     .profile-image {
         display: block;
-        height: 100%; /* تأكد من ملء الشاشة */
-        width: 100%; /* عرض الصورة في الهواتف الذكية */
         margin-left: 40px;
     }
         }
 @media (max-width: 768px) {
     .profile-image {
         margin-left: 120px;
-            width: 50%; /* عرض الصورة 100% من الحاوية */
-            height: 50%; /* ارتفاع الصورة 100% من الحاوية */
             object-fit: cover; /* ملاءمة الصورة داخل الحاوية */
         }
     .profile-image {
@@ -54,9 +49,6 @@
 }
     .profile-image {
          margin-left: 40px;
-        height: 100%; /* تأكد من ملء الشاشة */
-        display: block;
-        width: 100%; /* عرض الصورة في الهواتف الذكية */
     }
 }
 .mCustomScrollbar {
