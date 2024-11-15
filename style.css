@@ -1,4 +1,12 @@
 #stars, #yahia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* عرض كامل للنافذة */
+    height: 100vh; /* ارتفاع كامل للنافذة */
+    z-index: -1; /* تأكد من أن النجوم في الخلف */
+}
+#stars {
     position: fixed; /* استخدم fixed بدلاً من absolute */
     top: 0;
     left: 0;
