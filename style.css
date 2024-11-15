@@ -2,7 +2,7 @@
             color: gold; /* لون النص المتحرك */
             background-color: black; /* خلفية العنصر المتحرك */
             font-size: 24px; /* حجم النص */
-            padding: 10px; /* إضافة هوامش */
+            padding: 10px; /* إضافة هوامش */font-weight: 700;
         }
  #starCanvas {
             position: fixed;
