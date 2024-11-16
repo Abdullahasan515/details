@@ -90,10 +90,6 @@
         {
             animation-delay: 4.5s;
         }
-        /* باقي الأقسام */
-        .other-content {
-            display: none; /* مخفي في البداية */
-        }
 
 marquee {
     color: gold; /* لون النص المتحرك */
