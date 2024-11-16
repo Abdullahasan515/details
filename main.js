@@ -1,8 +1,9 @@
-        // انتظر 11 ثانية (10 ثواني + 1 ثانية للـ fadeOut)
         setTimeout(() => {
-            document.querySelector('.other-content').style.display = 'block';
-        }, 11000);
-
+            const section = document.querySelector('.section-intro');
+            if(section) {
+                section.classList.add('hidden');
+            }
+        }, 10000);
 $(document).ready(function () {
   var input = $('.field').find('input, textarea');
   input.keyup(function () {
