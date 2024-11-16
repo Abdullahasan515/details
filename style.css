@@ -68,15 +68,28 @@
 }
         /* باقي الأقسام */
         .other-content {
-            display: none; /* مخفي في البداية */
+            display: none; /* مخفي في البداية */    
+            position: relative;
         }
 marquee {
-    color: gold; /* لون النص المتحرك */
-    background-color: black; /* خلفية العنصر المتحرك */
-    font-size: 24px; /* حجم النص */
-    padding: 10px; /* إضافة هوامش */
-    font-weight: 700; /* وزن الخط */
+     overflow: hidden;
+    white-space: nowrap;
+    background-color: black;
+    color: gold;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 700;
 }
+.marquee-content {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
 
 #starCanvas {
     position: fixed;
