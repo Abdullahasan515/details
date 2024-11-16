@@ -1,8 +1,8 @@
-/*        // انتظر 11 ثانية (10 ثواني + 1 ثانية للـ fadeOut)
+        // انتظر 11 ثانية (10 ثواني + 1 ثانية للـ fadeOut)
         setTimeout(() => {
             document.querySelector('.other-content').style.display = 'block';
             document.querySelector('.section-intro').style.display = 'none';
-        }, 11000);*/
+        }, 11000);
 $(document).ready(function () {
   var input = $('.field').find('input, textarea');
   input.keyup(function () {
