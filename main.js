@@ -2,7 +2,7 @@
         setTimeout(() => {
             document.querySelector('.other-content').style.display = 'block';
             document.querySelector('.section-intro').style.display = 'none';
-        }, 11000);
+        }, 9000);
 $(document).ready(function () {
   var input = $('.field').find('input, textarea');
   input.keyup(function () {
