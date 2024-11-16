@@ -1,4 +1,8 @@
-
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
         .section-intro{
             height: 100vh;
             background: #000;
